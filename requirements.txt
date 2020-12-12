@@ -11,3 +11,4 @@ opencv-python==4.1.0.25
 gym==0.13.1
 keras==2.2.4
 pyvirtualdisplay==0.2.3
+scikit-learn==0.22.2

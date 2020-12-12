@@ -1,7 +1,9 @@
-FROM tensorflow/tensorflow:1.13.1-py3-jupyter
+FROM tensorflow/tensorflow:2.3.0-jupyter
+
+ENV DEBIAN_FRONTEND=noninteractive
 
 # Linuxパッケージのインストール
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && apt-get install -y tzdata\
     git \
     autoconf \
     tmux \

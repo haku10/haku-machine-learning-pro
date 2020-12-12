@@ -13,5 +13,4 @@ docker run  \
 ## ※2回目以降は
 `docker start コンテナID`
 
-
 # Jupyter Notebookの起動
