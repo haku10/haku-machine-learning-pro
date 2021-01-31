@@ -1,6 +1,6 @@
 version: "3"
 services:
-  gin-api:
+  jupyter-notebook:
     build: .
     container_name: haku_machine_learning_pro
     volumes:
