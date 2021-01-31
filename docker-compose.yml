@@ -1,0 +1,13 @@
+version: "3"
+services:
+  gin-api:
+    build: .
+    container_name: haku_machine_learning_pro
+    volumes:
+      - $HOME/.aws:/root/.aws
+      - ./contents:/tf/contents
+    ports:
+      - "9901:8888"
+      - "9902:6006"
+    tty: true
+    stdin_open: true

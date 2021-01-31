@@ -10,7 +10,8 @@ docker run  \
 -v ${PWD}/contents/:/tf/contents \
 -p 9901:8888 -p 9902:6006 haku_machine_learning_pro
 ```
-## ※2回目以降は
-`docker start コンテナID`
-
+→
+`docker-compose build`
+`docker-compose up`
+で起動できるように変更(2021/01/31)
 # Jupyter Notebookの起動
