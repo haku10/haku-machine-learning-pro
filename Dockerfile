@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:2.3.0-jupyter
+FROM tensorflow/tensorflow:latest-jupyter
 
 ENV DEBIAN_FRONTEND=noninteractive
 
@@ -38,6 +38,8 @@ RUN update-locale LANG=$LANG
 
 # Pythonライブラリのインストール
 RUN pip3 install --upgrade pip
+# ラベルの日本語化対応
+RUN pip3 install japanize_matplotlib
 COPY requirements.txt /tmp/
 RUN pip install -r /tmp/requirements.txt
 COPY . /tmp/
